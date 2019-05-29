@@ -95,3 +95,46 @@ true
 We broke the pairing session down into 25 minute sections, clarifying what we wanted to achieve in each block.
 
 ![25_mins](./images/25_mins.jpg)
+
+
+## First Error message
+---
+
+Writing our first TDD test with Jasmin and running the file in browser.
+
+
+![first_error](./images/first_error.png)
+
+Passing first error message:
+
+< fizzBuzzSpec.js >
+
+```
+describe('Javabuzz',function() {
+
+var javabuzz;
+
+  describe('knows when a number is', function() {
+
+    it('divisible by 3',function() {
+        javabuzz = new Javabuzz();
+        expect(javabuzz.isDivisibleByThree(3)).toBe(true);
+    });
+
+  });
+
+});
+```
+
+in fizzBuzz.js file
+
+```
+var Javabuzz = function(){};
+
+Javabuzz.prototype.isDivisibleByThree = function (number) {
+  return true;
+};
+
+```
+
+![first_error_fix](./images/first_error_fix.png)
