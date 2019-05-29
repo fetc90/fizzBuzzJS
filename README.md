@@ -126,7 +126,7 @@ var javabuzz;
 });
 ```
 
-in fizzBuzz.js file
+< in fizzBuzz.js file >
 
 ```
 var Javabuzz = function(){};
@@ -138,3 +138,7 @@ Javabuzz.prototype.isDivisibleByThree = function (number) {
 ```
 
 ![first_error_fix](./images/first_error_fix.png)
+
+After all tests pass
+
+![all_tests_pass](./images/all_tests_pass.png)
